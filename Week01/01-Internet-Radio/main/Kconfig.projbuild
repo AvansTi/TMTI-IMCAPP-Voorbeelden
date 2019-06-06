@@ -1,0 +1,25 @@
+menu "Internet Radio"
+
+config WIFI_SSID
+    string "WiFi SSID"
+	default "eduroam"
+	help
+		SSID (network name) for the example to connect to.
+
+config WIFI_IDENTITY
+    string "WiFi Identity"
+	default "mylogin@avans.nl"
+	help
+		WiFi Identity for eduraom
+
+		Can be left blank if the network has no enterprise security set.
+
+config WIFI_PASSWORD
+    string "WiFi Password"
+	default "mypassword"
+	help
+		WiFi password (WPA or WPA2) for the example to use.
+
+		Can be left blank if the network has no security set.
+
+endmenu
